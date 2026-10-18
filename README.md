@@ -49,11 +49,23 @@ Actual-versus-predicted plots and residual analysis are also used to examine mod
 
 The Lasso model perfomed best
 
+## Results
+
+The final model was evaluated on a held-out test set using three regression metrics.
+
 | Metric | Test Set Result |
-|---|---|
+|---|---:|
 | MAE | 0.5073 |
 | MSE | 0.4215 |
 | R² | 0.3511 |
+
+### Interpretation
+
+- **MAE (0.5073):** The model's predictions differ from the actual wine quality scores by approximately 0.51 points on average.
+- **MSE (0.4215):** This metric measures the average squared prediction error, penalizing larger errors more heavily.
+- **R² (0.3511):** The model explains approximately 35.11% of the variance in wine quality scores on the test set.
+
+The results indicate that the model captures some of the relationships between physicochemical properties and wine quality, but its predictive performance remains limited. Further improvements may require additional feature engineering, alternative regression models, or a more detailed analysis of prediction errors.
 
 ## Technologies
 
